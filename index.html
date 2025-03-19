@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>計時器遞增</title>
-    <style>
-        dialog {
-            width: 300px;
-            padding: 20px;
-            border: none;
-        }
-        progress {
-            width: 100%;
-            margin-top: 10px;
-        }
-        label {
-            font-size: 18px;
-        }
-    </style>
+    <title>Title</title>
 </head>
 <body>
+<p>title</p>
 
-<button id="loadButton">Load</button>
 
-<dialog id="timerDialog">
-    <label for="progress">進度:</label>
-    <progress id="progress" max="100" value="0"></progress>
-    <br>
-    <label id="progressValue">0</label>
-</dialog>
+<dialog open>show msg</dialog>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="100" max="100"></progress>
 
 <script>
     let isTimerRunning = false; // 監控計時器是否正在運行
